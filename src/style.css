@@ -1,0 +1,290 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.logo > img {
+  max-width: 100px;
+}
+
+.outer {
+  /* height: auto; */
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  padding: 0px 50px;
+  background-color: #fffded;
+  color: #02594c;
+  place-items: center;
+  border-bottom: 1px solid #d4d3cb;
+  position: sticky;
+  top: 0px;
+  z-index: 100;
+}
+ul {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+}
+ul > li {
+  list-style: none;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+ul li:hover {
+  transform: scale(1.1);
+  background-color: #02594c;
+  border-radius: 5px;
+}
+li > a {
+  text-decoration: none;
+  color: #02594c;
+  position: relative;
+}
+
+li > a:hover {
+  color: #fffded;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.hero > h1 {
+  font-size: 120px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.text-section {
+  height: 350px;
+  background-color: #fffded;
+  color: #039781;
+  font-size: 24px;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px minmax(200px, 400px);
+  z-index: 3;
+  text-align: center;
+  line-height: 1.6em;
+}
+
+.first-image-text-section,
+.second-image-text-section {
+  height: 600px;
+  z-index: 3;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+}
+
+.first-image-text-section {
+  background-color: #d8e5db;
+}
+
+.second-image-text-section {
+  background-color: #ffde9f;
+}
+
+.first-image-section,
+.second-image-section {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.first-image-section {
+  background-image: url(./grill.webp);
+}
+
+.second-image-section {
+  background-image: url(./drinks.webp);
+}
+
+.first-text-section,
+.second-text-section {
+  padding: 0px 50px;
+  font-size: 22px;
+  color: #039781;
+  font-weight: 200;
+}
+
+.first-text-section > button,
+.second-text-section > button {
+  margin-top: 20px;
+  color: #fffded;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background-color: #02594d;
+  padding: 10px 25px;
+  position: relative;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.first-text-section > button:hover,
+.second-text-section > button:hover {
+  background-color: #ff8574;
+}
+
+.main-area {
+  background-image: url(./hero.webp);
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  position: relative;
+}
+
+.main-area::before {
+  content: "";
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.3
+  ); /* Adjust the opacity (last value) to control the dimming level */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0; /* Ensure the overlay is above the background image */
+}
+
+.main-area > img::before {
+  content: ""; /* Create an empty content box for the overlay */
+  position: absolute; /* Position it absolutely within the container */
+  top: 0;
+  left: 0;
+  width: 100%; /* Cover the entire image */
+  height: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Adjust the overlay color and opacity */
+  opacity: 0; /* Initially, make it fully transparent */
+  transition: opacity 0.3s ease; /* Add a transition for smooth opacity changes */
+}
+
+.footer {
+  background-color: #fffded;
+  color: #02594c;
+  min-height: 100px;
+  display: grid;
+  place-content: center;
+}
+
+.menu {
+  background-color: #fffded;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  position: relative;
+}
+
+.popular,
+.on-the-go,
+.regular {
+  padding: 50px 10%;
+}
+
+.popular > h2,
+.on-the-go > h2,
+.regular > h2 {
+  padding-bottom: 10px;
+  padding-left: 5px;
+  display: inline-block;
+}
+
+.menu-icon > img {
+  width: 60px;
+  margin-left: -15px;
+}
+
+.menu-heading {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.menu-area {
+  width: 80%;
+  z-index: 3;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.card {
+  width: 100%;
+  height: auto;
+  padding: 20px 10px;
+  border-radius: 10px;
+  background-color: #fffded;
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 1px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgb(218, 218, 218);
+  display: grid;
+  grid-template-columns: 70% auto;
+  grid-template-rows: auto auto auto auto;
+  /* justify-content: end; */
+}
+
+.card:hover {
+  transform: scale(1.01);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dish-image {
+  grid-column: 2/3;
+  grid-row: 1/5;
+  display: grid;
+}
+
+.dish-image > img {
+  width: 60%;
+  border-radius: 5px;
+  justify-self: end;
+}
+
+.heading {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.description {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  font-size: 16px;
+  font-weight: 100;
+  color: darkgrey;
+  padding: 5px 0px;
+}
+
+.price {
+  grid-column: 1/2;
+  grid-row: 4/5;
+  font-size: 18px;
+  font-weight: 400;
+}
