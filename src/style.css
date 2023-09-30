@@ -232,7 +232,8 @@ li > a:hover {
   z-index: 3;
   display: grid;
   gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  padding-right: 50px;
 }
 
 .card {
@@ -346,4 +347,30 @@ li > a:hover {
 
 .location-card > button:hover {
   background-color: #ff8574;
+}
+
+.cart {
+  position: fixed;
+  top: 100px;
+  right: 0px;
+  width: 0px;
+  opacity: 0;
+  height: 100%;
+  background-color: #fffded;
+  border: 1px solid #d4d3cb;
+  visibility: hidden;
+  transition: width 1s, visibility 1s, opacity 0.5s;
+}
+
+.cart > h2 {
+  padding: 10px 10px;
+  color: black;
+}
+
+.close-cart {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: black;
 }

@@ -100,7 +100,10 @@ export default function Menu() {
           "$24.99"
         )}</div>
   </div>
-
+  <div class="cart" id="cart">
+  <h2>Cart Items</h2>
+  <span class="close-cart" id="close-cart">X</span>
+  </div>
 </div>
   ${Footer()}
 </div>`;
