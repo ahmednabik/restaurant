@@ -13,6 +13,8 @@
   /* height: auto; */
   display: flex;
   flex-direction: column;
+  height: auto;
+  background-color: #fffded;
 }
 .header {
   display: grid;
@@ -271,11 +273,12 @@ li > a:hover {
   grid-row: 1/2;
   font-size: 22px;
   font-weight: 600;
+  text-transform: lowercase;
 }
 
 .description {
   grid-column: 1/2;
-  grid-row: 2/3;
+  grid-row: 2/4;
   font-size: 16px;
   font-weight: 100;
   color: darkgrey;
@@ -287,4 +290,60 @@ li > a:hover {
   grid-row: 4/5;
   font-size: 18px;
   font-weight: 400;
+  align-self: end;
+}
+
+.location-area {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  margin: 150px auto;
+  gap: 60px;
+}
+
+.location-card {
+  width: 500px;
+  height: auto;
+  border-radius: 10px;
+  background-color: #fffded;
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 1px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgb(218, 218, 218);
+  display: grid;
+  grid-template-rows: 250px 1fr 1fr;
+  padding: 12px;
+}
+
+.location-image {
+  background-image: url(./drinks.webp);
+  background-size: cover;
+  border-radius: 5px;
+  grid-row: 1/2;
+}
+
+.location-card:nth-child(2) > .location-image {
+  background-image: url(./grill.webp);
+}
+
+.location-card > h3 {
+  padding: 20px 0px;
+}
+
+.location-card > button {
+  margin-top: 20px;
+  color: #fffded;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background-color: #02594d;
+  padding: 10px 25px;
+  position: relative;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.location-card > button:hover {
+  background-color: #ff8574;
 }

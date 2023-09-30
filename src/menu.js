@@ -17,27 +17,27 @@ export default function Menu() {
       </div>
       <div class="menu-area">${createMenuItem(
         dish,
-        "Tandoori Chicken",
-        "Great taste of Kabul",
-        "$4.99"
+        "PÃO DE QUEIJO",
+        "Chipotle crema",
+        "$8.99"
       )}
         ${createMenuItem(
           dish,
-          "Tandoori Chicken",
-          "Great taste of Kabul",
-          "$4.99"
+          "BOQUERONES & SALSA MACHA",
+          "White Spanish anchovies & homemade salsa mocha, served with tortillas",
+          "$11.99"
         )}
         ${createMenuItem(
           dish,
-          "Tandoori Chicken",
-          "Great taste of Kabul",
-          "$4.99"
+          "BONE MARROW",
+          "Chintexle, ensalada fresca, grilled sourdough",
+          "$18,99"
         )}
         ${createMenuItem(
           dish,
-          "Tandoori Chicken",
-          "Great taste of Kabul",
-          "$4.99"
+          "SAUSAGE & VEGGIE PARRILLADA ",
+          "Selection of sausages, grilled veggies, arepas, queso fundido",
+          "$22.99"
         )}</div>
   </div>
   <div class="on-the-go">
@@ -47,9 +47,9 @@ export default function Menu() {
 </div>
       <div class="menu-area">${createMenuItem(
         dish,
-        "Tandoori Chicken",
-        "Great taste of Kabul",
-        "$4.99"
+        "SHRIMP TACOS",
+        "Sauteed shrimp with refried beans, cheese, avocado, and chipotle cream",
+        "$15.99"
       )}
         ${createMenuItem(
           dish,
@@ -59,15 +59,15 @@ export default function Menu() {
         )}
         ${createMenuItem(
           dish,
-          "Tandoori Chicken",
-          "Great taste of Kabul",
-          "$4.99"
+          "TUNA TOSTADAS",
+          "Habanero ash mayo, sesame oil, scallions, watermelon, mint",
+          "$19.99"
         )}
         ${createMenuItem(
           dish,
-          "Tandoori Chicken",
-          "Great taste of Kabul",
-          "$4.99"
+          "DUCK CONFIT TACOS",
+          "Chihuahua cheese, avocado, cilantro, pickled onions",
+          "$14.99"
         )}</div>
   </div>
   <div class="regular">
@@ -77,27 +77,27 @@ export default function Menu() {
 </div>
       <div class="menu-area">${createMenuItem(
         dish,
-        "Tandoori Chicken",
-        "Great taste of Kabul",
-        "$4.99"
+        "PÃO DE QUIJO BURGER",
+        "Grass-fed burger mixed with caramelized onions topped with cilantro pesto",
+        "$21.99"
       )}
         ${createMenuItem(
           dish,
-          "Tandoori Chicken",
-          "Great taste of Kabul",
-          "$4.99"
+          "PICANHA",
+          "10 oz of grass-fed steak with farofa",
+          "$34.99"
         )}
         ${createMenuItem(
           dish,
-          "Tandoori Chicken",
-          "Great taste of Kabul",
-          "$4.99"
+          "LOCAL STEELHEAD TROUT",
+          "Chile-tahini sauce, arugula, almonds, sprinkled with Basmati rice",
+          "$28.99"
         )}
         ${createMenuItem(
           dish,
-          "Tandoori Chicken",
-          "Great taste of Kabul",
-          "$4.99"
+          "GRILLED BABY EGGPLANT",
+          "Red rice, lentil, dates, roasted cauliflower",
+          "$24.99"
         )}</div>
   </div>
 
